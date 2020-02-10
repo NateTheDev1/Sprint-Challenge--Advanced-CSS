@@ -1,1 +1,39 @@
 // Navigation code here
+.nav {
+  .flex-default(column, center);
+  align-items: center;
+  margin: 0 auto;
+  .spacing-small();
+  width: 50%;
+  background: rgb(246, 246, 246);
+
+  @media @phone {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .nav-links {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 45%;
+    text-align: center;
+    .flex-default(row, space-between);
+
+    @media @phone {
+      margin-bottom: 2%;
+      width: 80%;
+    }
+  }
+
+  a {
+    font-size: 1.5rem;
+    .links();
+  }
+}

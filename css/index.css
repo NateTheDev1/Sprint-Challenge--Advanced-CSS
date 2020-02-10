@@ -1,3 +1,21 @@
+.links {
+  text-decoration: none;
+  color: black;
+}
+.spacing-small {
+  margin-top: 1%;
+}
+.full-img {
+  width: 100%;
+  border-radius: 8px;
+}
+.default-button {
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +178,48 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1%;
+  width: 50%;
+  background: #f6f6f6;
+}
+@media (max-width:500px) {
+  .nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.nav h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+}
+.nav .nav-links {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .nav .nav-links {
+    margin-bottom: 2%;
+    width: 80%;
+  }
+}
+.nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +229,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
+  border-radius: 8px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -187,6 +251,21 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width:500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -203,8 +282,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .home .walk {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -212,9 +304,36 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn button {
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #22283a;
+  color: white;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+.home .walk .walk-text .btn :hover {
+  background: white;
+  color: #22283a;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
