@@ -185,7 +185,7 @@ p {
   align-items: center;
   margin: 0 auto;
   margin-top: 1%;
-  width: 50%;
+  width: 100%;
   background: #f6f6f6;
 }
 @media (max-width:500px) {
